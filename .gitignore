@@ -1,4 +1,6 @@
 .vs/
 */bin/
 */obj/
-*/packages/
+/packages/
+!/packages/repositories.config
+
