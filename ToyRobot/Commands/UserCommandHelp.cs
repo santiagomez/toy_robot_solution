@@ -23,6 +23,8 @@ namespace ToyRobot.Commands
                 "        will rotate the robot 90 degrees in the specified direction without changing the position of the robot.");
             sb.AppendLine("    REPORT");
             sb.AppendLine("        will announce the X,Y and F of the robot");
+            sb.AppendLine("    EXIT");
+            sb.AppendLine("        will exit the app.");
             gameContext.UserInterface.PrintMessage(sb.ToString());
             return true;
         }
