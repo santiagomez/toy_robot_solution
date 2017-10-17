@@ -11,7 +11,7 @@ namespace ToyRobot.Commands
 
             var message = gameContext.Robot.CurrentCoordinates == null
                 ? $"Robot is not currently on the table. Use the {CommandType.PLACE.ToString()} command."
-                : $"{gameContext.Robot.CurrentCoordinates.X},{gameContext.Robot.CurrentCoordinates.Y},{gameContext.Robot.CurrentFacingDirection.ToString()}";
+                : $"> {gameContext.Robot.CurrentCoordinates.X},{gameContext.Robot.CurrentCoordinates.Y},{gameContext.Robot.CurrentFacingDirection.ToString()}";
 
             gameContext.UserInterface.PrintMessage(message);
             return true;
